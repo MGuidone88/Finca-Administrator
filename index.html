@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finca Administrator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div id="body">
+    <header>
+        <h1>Finca Administrator</h1>
+        <p>Programa para llevar el control de la cosecha de una finca de nogales, podremos agregar un cosechador, luego en cada registro indicar la cantidad de kilos cosechados para que el sistema sume y calcule el total a pagar. Al final del programa podremos borrar todos los datos registrados.</p>
+    </header>
+    <main>
+        <section id="precioDolar">
+            Precio Dolar = $<span id="dolar"></span>
+        </section>
+
+        <section class="formularioCosechador">
+            <h2>Ingrese el nombre del cosechador/a para agregar a la lista:</h2>
+            <form action="" id="formCosechador">
+                <label for="">Nombre del Cosechador/a:
+                    <input type="text" required id="textoNombre"></label>
+                <input type="submit" value="Agragar a la lista" class="botonRegistro">
+            </form>
+
+        </section>
+        <section class="buscador">
+            <h2 class="subtitulo">Ingrese nombre de cosechador para buscar:</h2>
+            <label for="">Nombre del Cosechador/a:
+            <input type="text" required id="textoBuscador"></label>
+         
+
+        </section>
+        <section id="cajaCosechadores">
+
+        </section>
+        <section>
+            <div class="cajasContainer">
+                <div class="cajaInformacion">
+                    Total Kilos Cosechados:
+                    <div id="info1">0</div>
+                </div>
+                <div class="cajaInformacion">
+                    Total a Pagar:
+                    <div id="info2">0</div>
+                </div>
+                <div class="cajaInformacion">
+                    Total a Pagar en Dolares:
+                    <div id="info3">0</div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <button id="borrador">Borrar todos los Cosechadores</button>
+        <p>Advertencia! Se borraran del localStorage tambien</p>
+    </footer>
+    <div></div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/js.js"></script>
+    </div>
+</body>
+
+</html>
