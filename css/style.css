@@ -18,7 +18,6 @@ body {
     font-weight: 700;
 }
 
-/* HEADER */
 header {
     background-color: #ffac077c;
     color: black;
@@ -40,7 +39,6 @@ header h1 {
     text-align: center;
 }
 
-/* SECTION INFORMACION */
 #precioDolar {
     text-align: center;
     padding: 20px;
@@ -55,7 +53,6 @@ header h1 {
 
 .cajaInformacion {
     flex-grow: 1;
-    /* flex-shrink: 200px; */
     flex-basis: 200px;
     border: 2px solid black;
     text-align: center;
@@ -84,7 +81,6 @@ button:hover {
     border: 2px solid #164DA1;
 }
 
-/* FORMULARIO COSECHADOR */
 .formularioCosechador, .buscador {
     width: 100%;
     padding: 40px;
@@ -112,9 +108,6 @@ form {
 #textoNombre {
     width: 100%;
 }
-
-/* CAJA COSECHADORES */
-
 
 #cajaCosechadores {
     display: flex;
@@ -158,7 +151,6 @@ form {
     background-color: #ffac077c;
 }
 
-/* FOOTER */
 footer {
     background-color: #ffac077c;
     width: 100%;
@@ -178,7 +170,6 @@ footer p{
     margin-bottom: 20px;
 }
 
-/* MEDIAS QUERYS */
 @media (max-width:500px) {
     h1 {
         font-size: 20px;
